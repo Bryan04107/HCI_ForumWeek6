@@ -1,0 +1,161 @@
+Main{
+    padding: 15px;
+    border: 5px solid #ffffff;
+    font-size: 20px;
+    font-family: "Arial";
+    color: #555555;
+}
+
+.Main {
+    width: 1275px;
+    margin: 100px auto;
+    margin-top: 0;
+}
+
+.Title {
+    text-align: center;
+     
+}
+
+.Title h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.Columns {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.MenuCategories {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.Col1{
+    background: #b8f2e6;
+}
+
+.Col2{
+    background: #f2cbb8;
+}
+
+.MenuCategories h2 {
+    margin: 0px;
+    font-size: 24px;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.MenuBox {
+    display: flex;
+    align-items: center;
+}
+
+.MenuBox img {
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.MenuBox .MenuDetail h3 {
+    color: #333333;
+    font-size: 25px;
+    border-bottom: 1px solid #333333;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.MenuBox .MenuDetail h3 span {
+    color: #e0ab2e;
+    float: right;
+}
+
+.MenuBox .MenuDetail p {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .Main{
+        width: 975px;
+        height: 950px;
+        margin: 0px auto;
+    }
+    
+    .Columns {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    .MenuCategories{
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 671px) and (max-width: 1000px) {
+    .Main{
+        width: 550px;
+    }
+
+    .Columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MenuBox .MenuDetail h3 {   
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .Main{
+        width: 400px;
+    }
+
+    .Columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MenuCategories {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .MenuCategories h2 {
+        font-size: 30px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .MenuBox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .MenuBox img {   
+        width: 300px;
+        height: 300px;
+    }
+    
+    .MenuBox .MenuDetail h3 {   
+        font-size: 20px;
+    }
+
+    .MenuBox .MenuDetail p {
+        margin-bottom: 25px ;
+    }
+}
